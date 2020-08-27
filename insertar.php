@@ -5,7 +5,7 @@ $clave=$_POST['clave'];
 $foton=$_FILES['foto']['name'];
 $fotot=$_FILES['foto']['type'];
 $fotos=$_FILES['foto']['size'];
-$carpeta=$_SERVER['document_root'].'/img';
+$carpeta='/img';
 move_uploaded_file($_FILES['imagen']['tmp_name'],$carpeta.$foton);
 include("conexion.php");
 $foto=$foton.".".$fotot;
